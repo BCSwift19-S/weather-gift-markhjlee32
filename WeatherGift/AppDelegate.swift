@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  WeatherGift
 //
-//  Created by Jason Tee on 3/6/19.
-//  Copyright © 2019 Jason Tee. All rights reserved.
+//  Created by Mark Lee on 3/6/19.
+//  Copyright © 2019 Mark Lee. All rights reserved.
 //
 
 import UIKit
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyDxMyFjXazE_wA3iuaA4z4yMB2FybiRqps")
         return true
     }
 
